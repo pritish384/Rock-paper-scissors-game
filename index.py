@@ -50,7 +50,11 @@ root.title("Stone Paper Scissor Game by Pritish")
 root.geometry("400x400")
 root.resizable(width=False, height=False)
 root.configure(bg="#11A7DF")
+icon = PhotoImage(file='./assets/logo.ico')
+root.tk.call('wm', 'iconphoto', root._w, icon)
+
 result_text = StringVar()
+
 
 #Assets
 photo1 = PhotoImage(file="assets/Rock.png").subsample(3,3)
