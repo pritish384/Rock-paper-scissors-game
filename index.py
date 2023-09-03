@@ -36,6 +36,13 @@ root.configure(bg="#11A7DF")
 
 result_text = StringVar(root)
 
+icon = PhotoImage(file='./assets/logo.ico')
+root.tk.call('wm', 'iconphoto', root._w, icon)
+
+result_text = StringVar()
+
+
+
 #Assets
 rock_img = PhotoImage(file="assets/Rock.png").subsample(3,3)
 paper_img = PhotoImage(file="assets/Paper.png").subsample(3,3)
